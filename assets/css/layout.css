@@ -1,0 +1,9 @@
+/* 
+ * This file contains layout related CSS
+ * For components like alerts, buttons, forms and others you should create separate CSS files
+ * For modules like footer, header, menu you should also create separate CSS files
+ */
+
+body {
+  padding-top: 50px;
+}
