@@ -1,7 +1,7 @@
-// Define module for users service
+// Define module for users factory
 angular.module('app.users.service', ['ngResource'])
 
-// Define User factory
+// Define users factory
 .factory('Users', ['$resource', function ($resource) {
-  return $resource('temp/users/:userId.json');
+  return $resource('temp/users/:id.json');
 }]);

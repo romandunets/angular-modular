@@ -2,7 +2,7 @@
 // Optinally the following files can be created and added as dependencies: 'app.routes', 'app.core', 'app.services', 'app.config'
 angular.module('app', ['ngRoute', 'app.home', 'app.users'])
 
-// Setup default route
+// Setup shared routes
 .config(['$routeProvider', function ($routeProvider) {
   $routeProvider.otherwise({
     redirectTo:'/home'
