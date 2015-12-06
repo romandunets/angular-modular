@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html ng-app="app">
   <head>
+    <!-- meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="AngularJS application structure">
     <meta name="keywords" content="AngularJS, Application, Structure">
     <meta name="author" content="Roman Dunets">
+    <!-- end meta -->
 
+    <!-- title -->
     <link rel="shortcut icon" href="assets/img/favicon.ico">
     <title>AngularJS application structure</title>
+    <!-- end title -->
 
+    <!-- stylesheets -->
     <link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="assets/css/layout.css" rel="stylesheet" type="text/css">
+    <!-- end stylesheets -->
 
+    <!-- libs javascript -->
     <script type="text/javascript" language="javascript" src="assets/libs/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" language="javascript" src="assets/libs/angular/angular.min.js"></script>
     <script type="text/javascript" language="javascript" src="assets/libs/angular-resource/angular-resource.min.js"></script>
     <script type="text/javascript" language="javascript" src="assets/libs/angular-route/angular-route.min.js"></script>
     <script type="text/javascript" language="javascript" src="assets/libs/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <!-- end libs javascript -->
 
+    <!-- common javascript -->
     <script type="text/javascript" language="javascript" src="assets/js/common.js"></script>
+    <!-- end common javascript -->
 
+    <!-- app javascript -->
     <script type="text/javascript" language="javascript" src="app/app.js"></script>
     <script type="text/javascript" language="javascript" src="app/shared/menu.drct.js"></script>
     <script type="text/javascript" language="javascript" src="app/components/home/app.home.js"></script>
@@ -28,10 +39,13 @@
     <script type="text/javascript" language="javascript" src="app/components/users/app.users.js"></script>
     <script type="text/javascript" language="javascript" src="app/components/users/users.ctrl.js"></script>
     <script type="text/javascript" language="javascript" src="app/components/users/users.fct.js"></script>
+    <!-- end javascript -->
   </head>
 
   <body>
-    <div ng-menu></div>
-    <div ng-view class="container"></div>
+    <!-- page structure -->
+    <ng-menu></ng-menu>
+    <ng-view></ng-view>
+    <!-- end structure -->
   </body>
 </html>
