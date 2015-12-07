@@ -7,6 +7,6 @@ angular.module('app.users.controller', [])
 }])
 
 // Define user controller
-.controller('UserController', ['$scope', 'user', function UsersController($scope, user) {
+.controller('UserController', ['$scope', 'user', function UserController($scope, user) {
   $scope.user = user;
 }]);
